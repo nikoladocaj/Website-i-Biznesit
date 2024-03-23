@@ -1,50 +1,29 @@
-
-
- 
-
-        header {
-            
-            position: fixed;
-            right: 0;
-            top: 5px;
-            height: 30px;
-            display: flex;
-            align-items: center;
-            
-        }
-
-        header * {
-            display: inline;
-        }
-
-        header li {
-            margin: 20px;
-        }
-
-        header li a {
-            color: black;
-            text-decoration: none;
-        }
-
 body{
-    background-color: cornflowerblue;
-}
-li a{
-    padding: 10px;
     
+    background: linear-gradient(.25turn, #9c4040, 50%, cornflowerblue);
 }
-header{
+header {
     position: fixed;
-     right :0;
-     height: 0;
-
-}
-ul{
+    right: 0;
+    top: 5px;
+    height: 30px;
     display: flex;
-    
+    align-items: center;
+    padding: 20px;
+    font-size: 24px;
+    padding-left: 40px;
 }
-/* -- Button Border    --*/
-
+header * {
+    display: inline;
+}
+header li {
+    margin: 200px;
+}
+header li a {
+    color: black;
+    text-decoration: none;
+}
+/*-- Button Border --*/
 button {
     border: none; 
     outline: none; 
@@ -64,13 +43,10 @@ button {
     left: 20px; 
     transform: translateY(-50%);
 }
-
-
-
-
 .main_img{
     position: absolute;
-    right: 70%;
+    width: 600px;
+    right: 26%;
     top: 50%;
     transform: translate(50%, -50%);
 }
