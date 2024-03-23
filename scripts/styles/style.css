@@ -17,7 +17,7 @@ header * {
     display: inline;
 }
 header li {
-    margin: 200px;
+    margin: 20px;
 }
 header li a {
     color: black;
