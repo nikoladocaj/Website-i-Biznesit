@@ -1,7 +1,15 @@
-li{
-    float: right;
-}
+
 li a{
     padding: 10px;
-    display: block;
+    
+}
+header{
+    position: fixed;
+     right :0;
+     height: 0;
+
+}
+ul{
+    display: flex;
+    
 }
