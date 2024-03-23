@@ -1,4 +1,6 @@
-
+body{
+    background-color: cornflowerblue;
+}
 li a{
     padding: 10px;
     
@@ -12,4 +14,35 @@ header{
 ul{
     display: flex;
     
+}
+/* -- Button Border    --*/
+
+button {
+    border: none; 
+    outline: none; 
+    background: none; 
+    
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%; 
+    left: 20px; 
+    transform: translateY(-50%);
+}
+
+
+
+
+.main_img{
+    position: absolute;
+    right: 70%;
+    top: 50%;
+    transform: translate(50%, -50%);
 }
