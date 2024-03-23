@@ -36,12 +36,13 @@ button {
     margin-top: 20px;
     display: flex;
     justify-content: center;
-    width: 50px;
+    width: 60px;
     height: 50px;
     position: absolute;
-    top: 50%; 
+    top: 40%; 
     left: 20px; 
     transform: translateY(-50%);
+    padding: 20px;
 }
 .main_img{
     position: absolute;
@@ -51,3 +52,69 @@ button {
     transform: translate(50%, -50%);
 }
 
+p{
+    position: absolute;
+    top: 25%; 
+    left: 10%; 
+    transform: translateY(-50%);
+    font-size: 30px;
+    font:  "Archivo", sans-serif;
+    font-family: Helvetica, sans-serif;
+    padding: 20px;
+    color: aliceblue;
+}
+p1{
+    position: absolute;
+    top: 35%; 
+    left: 10%; 
+    transform: translateY(-50%);
+    font-size: 20px;
+    font:  sans-serif;
+    font-family: Helvetica, sans-serif;
+    padding: 20px;
+    color: aliceblue;
+}
+p2{
+    position: absolute;
+    top: 36%; 
+    left: 10%; 
+    transform: translateY(-50%);
+    font-size: 20px;
+    font:  sans-serif;
+    font-family: Helvetica, sans-serif;
+    padding: 20px;
+    color: aliceblue;
+}
+p2{
+    position: absolute;
+    top: 39%; 
+    left: 10%; 
+    transform: translateY(-50%);
+    font-size: 20px;
+    font:  sans-serif;
+    font-family: Helvetica, sans-serif;
+    padding: 20px;
+    color: aliceblue;
+}
+p3{
+    position: absolute;
+    top: 43%; 
+    left: 10%; 
+    transform: translateY(-50%);
+    color: aliceblue;
+    font-size: 20px;
+    font:  sans-serif;
+    font-family: Helvetica, sans-serif;
+    padding: 20px;
+}
+p4{
+    position: absolute;
+    top: 47%;
+    left: 10%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    font:  sans-serif;
+    font-family: Helvetica, sans-serif;
+    padding: 20px;
+    color: aliceblue;
+}
