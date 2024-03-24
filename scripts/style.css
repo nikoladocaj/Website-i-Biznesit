@@ -1,37 +1,187 @@
-body{
-    
-    background: linear-gradient(.25turn, #9c4040, 50%, cornflowerblue);
+
+/* Importing Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
+
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+}
+
+header .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navbar .logo {
+  color: #fff;
+  font-weight: 600;
+  font-size: 2.1rem;
+  text-decoration: none;
+}
+
+.navbar .logo span {
+  color: #C06B3E;
+}
+
+.navbar .menu-links {
+  display: flex;
+  list-style: none;
+  gap: 35px;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.navbar a:hover {
+  color: #C06B3E;
+}
+
+.hero-section {
+  height: 100vh;
+  background-image: url("../images/programming-background-collage.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.hero-section .content {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  color: #fff;
+}
+
+.hero-section .content h2 {
+  font-size: 3rem;
+  max-width: 600px;
+  line-height: 70px;
+}
+
+.hero-section .content p {
+  font-weight: 300;
+  max-width: 600px;
+  margin-top: 15px;
+}
+
+.hero-section .content button {
+  background: #fff;
+  padding: 12px 30px;
+  border: none;
+  font-size: 1rem;
+  border-radius: 6px;
+  margin-top: 38px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+
+.hero-section .content button:hover {
+  color: #fff;
+  background: #C06B3E;
+}
+
+#close-menu-btn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+  display: none;
+}
+
+#hamburger-btn {
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 10px;
+  }
+
+  header.show-mobile-menu::before {
+    content: "";
     position: fixed;
-    right: 0;
-    top: 5px;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    padding: 20px;
-    font-size: 24px;
-    padding-left: 40px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px);
+  }
+
+  .navbar .logo {
+    font-size: 1.7rem;
+  }
+
+    
+  #hamburger-btn, #close-menu-btn {
+    display: block;
+  }
+
+  .navbar .menu-links {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100vh;
+    background: #fff;
+    flex-direction: column;
+    padding: 70px 40px 0;
+    transition: left 0.2s ease;
+  }
+
+  header.show-mobile-menu .navbar .menu-links {
+    left: 0;
+  }
+
+  .navbar a {
+    color: #000;
+  }
+
+  .hero-section .content {
+    text-align: center;
+  }
+
+  .hero-section .content :is(h2, p) {
+    max-width: 100%;
+  }
+
+  .hero-section .content h2 {
+    font-size: 2.3rem;
+    line-height: 60px;
+  }
+  
+  .hero-section .content button {
+    padding: 9px 18px;
+  }
 }
-header * {
-    display: inline;
-}
-header li {
-    margin: 200px;
-}
-header li a {
-    color: black;
-    text-decoration: none;
-}
-/*-- Button Border --*/
 button {
     border: none; 
     outline: none; 
     background: none; 
     
+    
 }
 .buttons{
-    display: flex;
+    display: inline;
     flex-direction: column;
     margin-top: 20px;
     display: flex;
@@ -39,82 +189,8 @@ button {
     width: 60px;
     height: 50px;
     position: absolute;
-    top: 40%; 
+    top: 90%; 
     left: 20px; 
     transform: translateY(-50%);
     padding: 20px;
-}
-.main_img{
-    position: absolute;
-    width: 600px;
-    right: 26%;
-    top: 50%;
-    transform: translate(50%, -50%);
-}
-
-p{
-    position: absolute;
-    top: 25%; 
-    left: 10%; 
-    transform: translateY(-50%);
-    font-size: 30px;
-    font:  "Archivo", sans-serif;
-    font-family: Helvetica, sans-serif;
-    padding: 20px;
-    color: aliceblue;
-}
-p1{
-    position: absolute;
-    top: 35%; 
-    left: 10%; 
-    transform: translateY(-50%);
-    font-size: 20px;
-    font:  sans-serif;
-    font-family: Helvetica, sans-serif;
-    padding: 20px;
-    color: aliceblue;
-}
-p2{
-    position: absolute;
-    top: 36%; 
-    left: 10%; 
-    transform: translateY(-50%);
-    font-size: 20px;
-    font:  sans-serif;
-    font-family: Helvetica, sans-serif;
-    padding: 20px;
-    color: aliceblue;
-}
-p2{
-    position: absolute;
-    top: 39%; 
-    left: 10%; 
-    transform: translateY(-50%);
-    font-size: 20px;
-    font:  sans-serif;
-    font-family: Helvetica, sans-serif;
-    padding: 20px;
-    color: aliceblue;
-}
-p3{
-    position: absolute;
-    top: 43%; 
-    left: 10%; 
-    transform: translateY(-50%);
-    color: aliceblue;
-    font-size: 20px;
-    font:  sans-serif;
-    font-family: Helvetica, sans-serif;
-    padding: 20px;
-}
-p4{
-    position: absolute;
-    top: 47%;
-    left: 10%;
-    transform: translateY(-50%);
-    font-size: 20px;
-    font:  sans-serif;
-    font-family: Helvetica, sans-serif;
-    padding: 20px;
-    color: aliceblue;
 }
