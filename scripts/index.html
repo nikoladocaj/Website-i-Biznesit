@@ -1,26 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>...</title>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet"> -->
 </head>
 <body>
     <header>
-        <nav>
-            <li><a href="html_inner_pages/Home.html">Home</a></li>
-            <li><a href="html_inner_pages/about.html">About</a></li>
-            <li><a href="html_inner_pages/why_us.html">Why Us?</a></li>
-            <li><a href="html_inner_pages/klientet.html"></a>Klientet</li>
-            <li><a href="html_inner_pages/prices.html">Prices</a></li>
+          <a class="logo" href="#">///<span></span></a>
+          <ul class="menu-links">
+            <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Prices</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Contact us</a></li>
+          </ul>
+          <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
         </nav>
-    </header>
-    <img class="main_img" src="../images/main.png" alt="404">
-    <div class="buttons">
+      </header>
+    <!-- <img class="main_img" src="../images/main.png" alt="404"> -->
+       
+    
+    <section class="hero-section">
+        <div class="content">
+          <h2>Çojeni biznesin tuaj në nivelin tjetër</h2>
+          <p>
+            Ekipi jone ju mundeson automatizimin e biznesit tuaj
+            Me një angazhim të pasionuar për dizajnin dhe teknologjinë,
+            ne ofrojmë zgjidhje inovative dhe të përshtatshme për të përfaqësuar
+            biznesin tuaj në internet.
+            
+          </p>
+        </div>
+      </section>
+      <div class="buttons">
         <a href="contact.html">
             <button id="call" >
                 <img src="", width="40px">
@@ -36,15 +56,17 @@
                 <img src="../images/tiktok_icon.png" width="60px" >
             </button>
         </a>
-    </div>    
-    <p>Çojeni biznesin tuaj në nivelin tjetër</p>
-    <br>
-    <p1>Ekipi jone ju mundeson automatizimin e biznesit tuaj</p1>
-    <br>
-    <p2>Me një angazhim të pasionuar për dizajnin dhe teknologjinë, </p2>
-    <br>
-    <p3>ne ofrojmë zgjidhje inovative dhe të përshtatshme për të përfaqësuar</p3>
-    <br>
-    <p4>biznesin tuaj në internet.</p4>
+    </div> 
+      <script>
+        const header = document.querySelector("header");
+        const hamburgerBtn = document.querySelector("#hamburger-btn");
+      const closeMenuBtn = document.querySelector("#close-menu-btn");
+
+      // Toggle mobile menu on hamburger button click
+      hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
+
+      // Close mobile menu on close button click
+      closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
+    </script>
 </body>
 </html>
