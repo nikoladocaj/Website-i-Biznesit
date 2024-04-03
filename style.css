@@ -37,14 +37,15 @@ header .navbar {
   color: #fff;
   text-decoration: none;
   transition: 0.2s ease;
+
 }
 .navbar a:hover {
-  color: rgb(2, 255, 187);
+  color: rgb(255,226,0,1);
 }
 .hero-section {
   height: 100vh;
   background: rgb(2,0,36);
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,73,121,1) 35%, rgba(255,226,0,1) 100%);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,73,121,1) 36%, rgba(110,203,228,1) 79%); 
   /* background-image: url("../../images/programming-background-collage.jpg"); */
   background-position: center;
   background-size: cover;
@@ -62,15 +63,16 @@ header .navbar {
   font-size: 3rem;
   max-width: 600px;
   line-height: 70px;
-  color: rgb(2, 255, 187);
+  color: rgb(255, 255, 255);
 }
 .hero-section .content p {
   font-weight: 300;
   max-width: 600px;
   margin-top: 15px;
-  color: rgb(2, 255, 187);
+  color: rgb(255, 255, 255);
   font-size: larger;
   outline: #000;
+  align-items: left;
   
 }
 .hero-section .content button {
@@ -88,10 +90,10 @@ header .navbar {
   background: none;  
   
 }
-.hero-section .content button:hover {
+/* .hero-section .content button:hover {
   color: #fff;
   background: rgb(2, 255, 187);
-}
+} */
 #close-menu-btn {
   position: absolute;
   right: 20px;
